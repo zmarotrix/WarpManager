@@ -101,7 +101,7 @@ export default class WarpManager {
                     if (this.ModLoader.ImGui.isItemHovered()) {
                         this.ModLoader.ImGui.setTooltip("This enables you to see every\nsingle individual entrance.\nMany Entrances here will NOT\nwork as expected. Use at your own risk.");
                     }
-                    this.ModLoader.ImGui.text("Some warps won't work as expected.\nOoT's entrance system is weird.");
+                    this.ModLoader.ImGui.text("Some warps may not work as expected.\nOoT's entrance system is weird.");
                     for (const [key, value] of OOTScenes.entries()) {
                         for (let i = 0; i < value.entranceTable.length && key.valueOf() < 101; i++) {
                             if (this.searchInput[0].length === 0 || (value.name.toUpperCase() + "" + value.entranceTable[i].toString(16).toUpperCase().padStart(4, '0')).indexOf(this.searchInput[0].toUpperCase()) !== -1) {
