@@ -1,0 +1,13 @@
+{
+  "name": "Warp Manager",
+  "version": "0.9.1",
+  "core": "Z64Lib",
+  "description": "",
+  "main": "WarpManager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "MARO",
+  "license": "ISC"
+}

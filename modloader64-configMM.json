@@ -1,0 +1,39 @@
+{
+  "ModLoader64": {
+    "rom": "Zelda - Majora's Mask.z64",
+    "patch": "ML64 MM Vanillamizer.bps",
+    "isServer": true,
+    "isClient": true,
+    "supportedConsoles": [
+      "Mupen64Plus"
+    ],
+    "selectedConsole": "Mupen64Plus",
+    "coreOverride": "",
+    "disableVIUpdates": false,
+    "enableDebugger": false
+  },
+  "NetworkEngine.Client": {
+    "isSinglePlayer": true,
+    "forceServerOverride": false,
+    "ip": "127.0.0.1",
+    "port": 8082,
+    "lobby": "crash-whimsical-23",
+    "nickname": "Player",
+    "password": "",
+    "forceTCPMode": false
+  },
+  "NetworkEngine.Server": {
+    "port": 8082,
+    "udpPort": 8082,
+    "patchSizeLimitMB": 10
+  },
+  "Mupen64Plus": {
+    "rsp": "mupen64plus-rsp-hle",
+    "video": "mupen64plus-video-gliden64",
+    "audio": "mupen64plus-audio-sdl",
+    "input": "mupen64plus-input-sdl"
+  },
+  "OcarinaofTime": {
+    "skipN64Logo": true
+  }
+}
