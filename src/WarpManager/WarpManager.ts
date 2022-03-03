@@ -26,7 +26,7 @@ export default class WarpManager {
     lastAddress: number = 0;
     targetInput: string_ref = [""];
     searchInput: string_ref = [""];
-    window: boolean = false;
+    window: bool_ref = [false];
     launch: boolean = false;
     overide: bool_ref = [false];
     advanced: bool_ref = [false];
@@ -65,15 +65,15 @@ export default class WarpManager {
         if (this.ModLoader.ImGui.beginMainMenuBar()) {
             if (this.ModLoader.ImGui.beginMenu("Mods")) {
                 if (this.ModLoader.ImGui.menuItem("Warp Manager")) {
-                    this.window = !this.window;
+                    this.window[0] = !this.window[0];
                 }
                 this.ModLoader.ImGui.endMenu();
             }
             this.ModLoader.ImGui.endMainMenuBar();
         }
-        if (this.window) {
+        if (this.window[0]) {
             if (Z64_GAME === Z64LibSupportedGames.OCARINA_OF_TIME) { //Ocarina of Time Implementation.
-                if (this.ModLoader.ImGui.begin("Warp Manager (OoT Beta!)###Maro:WarpManager")) {
+                if (this.ModLoader.ImGui.begin("Warp Manager (OoT Beta!)###Maro:WarpManager", this.window)) {
                     if(this.core.OOT!.helper.isTitleScreen())
                     {
                         this.ModLoader.ImGui.textColored(`Warp tables are not loaded on the title screen.\nTrying to warp from the title screen will lead\nto reading junk data and possibly crashing.`, {x:1,y:0,z:0,w:1});

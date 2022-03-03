@@ -1,6 +1,6 @@
 {
   "name": "Warp Manager",
-  "version": "0.9.9",
+  "version": "0.9.9b",
   "core": "Z64Lib",
   "description": "Adds a warp manager menu to the mods tab of ModLoader64.",
   "main": "WarpManager.js",
